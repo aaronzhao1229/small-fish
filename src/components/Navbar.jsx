@@ -1,8 +1,8 @@
 export default function Navbar() {
   return (
-    <div className="navbar text-neutral-content bg-slate-200">
+    <div className="navbar text-neutral-content bg-slate-200 py-2">
       <div className="navbar-start">
-        <button className="btn btn-ghost text-xl">
+        <button className="btn btn-ghost">
           <div className="avatar">
             <div className="w-20 h-12 overflow-hidden rounded-lg">
               <img
@@ -19,23 +19,23 @@ export default function Navbar() {
       <div className="navbar-center hidden sm:flex">
         <ul className="menu menu-horizontal px-1 text-raisin-black">
           <li>
-            <a>Item 1</a>
+            <a>About</a>
           </li>
           <li>
             <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
+              <summary>What I do</summary>
+              <ul className="p-2 z-10 w-52">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>Acoustic Engineering</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>Software Development</a>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>Contact</a>
           </li>
         </ul>
       </div>
