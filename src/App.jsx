@@ -1,11 +1,15 @@
 import Home from './components/Home'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="bg-slate-200 text-raisin-black p-4">
+    <div className="bg-slate-200 text-raisin-black">
       <Navbar />
-      <Home />
+      <div className="mx-2">
+        <Home />
+      </div>
+      <Footer />
     </div>
   )
 }

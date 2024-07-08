@@ -2,7 +2,7 @@ import { PlusIcon } from '@heroicons/react/24/solid'
 import BgImage from './BgImage'
 export default function Home() {
   return (
-    <div className="p-8">
+    <div className="xs:m-4 sm:m-8">
       <BgImage image={'../house.jpg'} label={'Acoustic Engineering'} />
 
       <div className="flex justify-center p-4">
