@@ -1,8 +1,9 @@
+import { Link, NavLink } from 'react-router-dom'
 export default function Navbar() {
   return (
     <div className="navbar text-white bg-raisin-black py-2 border-b-2 border-slate-300 sm:px-2 lg:px-8">
       <div className="navbar-start">
-        <button className="btn btn-ghost">
+        <NavLink className="btn btn-ghost" to={'/home'}>
           <div className="avatar">
             <div className="w-20 h-12 overflow-hidden rounded-lg">
               <img
@@ -13,13 +14,13 @@ export default function Navbar() {
             </div>
           </div>
           <p className="text-white">Small Fish</p>
-        </button>
+        </NavLink>
       </div>
 
       <div className="navbar-end sm:flex">
         <ul className="menu menu-horizontal px-1 text-white">
           <li>
-            <a>About</a>
+            <Link to={`about`}>About</Link>
           </li>
           <li>
             <details>
