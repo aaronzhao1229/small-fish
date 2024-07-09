@@ -1,7 +1,7 @@
-import Carousel from './Carousel'
+import Carousel from '../components/Carousel'
 
-import ParagraphText from './ParagraphText'
-import TitleText from './TitleText'
+import ParagraphText from '../components/ParagraphText'
+import TitleText from '../components/TitleText'
 
 const introduction =
   'My name is Jian Zhao, commonly known as Aaron. In 2024, I decided to become a sole trader, utilising my skills in acoustic engineering and software development engineering. At the intersection of engineering and technology, I enjoy using technology to solve engineering challenges.'
@@ -17,7 +17,7 @@ export default function About() {
       <ParagraphText text={introduction} />
       <ParagraphText text={smallFishIntroduction} />
       <ParagraphText text={personalLife} />
-      {/* <Diff /> */}
+
       <Carousel />
     </div>
   )

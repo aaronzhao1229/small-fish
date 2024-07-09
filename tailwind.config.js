@@ -15,5 +15,20 @@ export default {
       },
     },
   },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#fc9432',
+          secondary: '#f6d860',
+          accent: '#37cdbe',
+          neutral: '#3d4451',
+          'base-100': '#ffffff',
+          'princeton-orange': '#fc9432',
+          'safety-orange': '#fd8021',
+        },
+      },
+    ],
+  },
   plugins: [require('daisyui')],
 }

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export default function BgImage({ label, image }) {
   return (
     <div
@@ -11,4 +13,9 @@ export default function BgImage({ label, image }) {
       </div>
     </div>
   )
+}
+
+BgImage.propTypes = {
+  label: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 }

@@ -30,13 +30,13 @@ export default function Navbar() {
                   <Link to={`acoustic`}>Acoustic Engineering</Link>
                 </li>
                 <li className="hover:bg-raisin-black hover:text-white rounded-lg">
-                  <a>Software Development</a>
+                  <Link to={`software`}>Software Development</Link>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <a>Contact</a>
+            <Link to={`contact`}>Contact</Link>
           </li>
         </ul>
       </div>
