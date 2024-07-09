@@ -11,6 +11,10 @@ export default function Contact() {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState(false)
 
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
   const sendEmail = (e) => {
     e.preventDefault()
     setLoading(true)
@@ -20,6 +24,10 @@ export default function Contact() {
       })
       .then(
         () => {
+          // Reset form after sending email
+          setName('')
+          setEmail('')
+          setMessage('')
           setLoading(false)
           setSuccess(true)
           setTimeout(() => {
@@ -31,6 +39,10 @@ export default function Contact() {
           setLoading(false)
         }
       )
+  }
+
+  const isFormValid = () => {
+    return name.trim() !== '' && email.trim() !== '' && message.trim() !== ''
   }
   return (
     <div>
@@ -65,6 +77,8 @@ export default function Contact() {
               placeholder="small fish"
               className="input input-bordered input-acccent w-full"
               name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </label>
           <label className="form-control mb-4">
@@ -76,6 +90,8 @@ export default function Contact() {
               placeholder="name@site.com"
               className="input input-bordered w-full"
               name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </label>
 
@@ -86,10 +102,15 @@ export default function Contact() {
             <textarea
               className="textarea textarea-bordered h-24"
               name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </label>
           <div className="card-actions mt-8">
-            <button className="btn bg-princeton-orange  w-48">
+            <button
+              className="btn bg-princeton-orange w-48"
+              disabled={!isFormValid()}
+            >
               {loading ? (
                 <span className="loading loading-spinner loading-xs"></span>
               ) : (
