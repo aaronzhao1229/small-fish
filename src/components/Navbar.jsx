@@ -27,7 +27,7 @@ export default function Navbar() {
               <summary>Services</summary>
               <ul className="p-2 z-10 w-52 text-raisin-black">
                 <li className="hover:bg-raisin-black hover:text-white rounded-lg">
-                  <a>Acoustic Engineering</a>
+                  <Link to={`acoustic`}>Acoustic Engineering</Link>
                 </li>
                 <li className="hover:bg-raisin-black hover:text-white rounded-lg">
                   <a>Software Development</a>

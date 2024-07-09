@@ -11,7 +11,7 @@ export default {
         pumpkin: '#fe6f1b',
         'giants-orange': '#f95818',
         'chili-red': '#e33a14',
-        'raisin-black': '#211d29',
+        'raisin-black': '#141c2b',
       },
     },
   },
