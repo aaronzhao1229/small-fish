@@ -22,13 +22,13 @@ export default function AcousticEngineering() {
       />
       <div className="divider"></div>
       <ImageWithText
-        image="../trafficNoise.jpg"
+        image="../aircraft.jpg"
         subtitleText={aircraftSubtitle}
         text={aircraft}
       />
       <div className="divider"></div>
       <ImageWithText
-        image="../trafficNoise.jpg"
+        image="../townhouses.jpg"
         subtitleText={g6Subtitle}
         text={g6}
       />

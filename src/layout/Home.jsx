@@ -13,7 +13,7 @@ export default function Home() {
         </p>
       </div>
       <BgImage
-        image={'../house.jpg'}
+        image={'../acoustic.jpg'}
         label={'Acoustic Engineering'}
         onClick={() => {
           navigate('/acoustic')

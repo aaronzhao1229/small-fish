@@ -80,10 +80,10 @@ export default function Navbar() {
             <details>
               <summary>Services</summary>
               <ul className="p-2 z-10 w-52 text-raisin-black">
-                <li className="hover:bg-raisin-black hover:text-white rounded-lg">
+                <li className="rounded-lg">
                   <Link to={`acoustic`}>Acoustic Engineering</Link>
                 </li>
-                <li className="hover:bg-raisin-black hover:text-white rounded-lg">
+                <li className="rounded-lg">
                   <Link to={`software`}>Software Development</Link>
                 </li>
               </ul>

@@ -2,6 +2,9 @@ import emailjs from '@emailjs/browser'
 import { useRef, useState } from 'react'
 import SuccessBand from '../components/SuccessBand'
 import ErrorBand from '../components/ErrorBand'
+import SubtitleText from '../components/SubtitleText'
+import ParagraphText from '../components/ParagraphText'
+import { EnvelopeIcon } from '@heroicons/react/24/outline'
 export default function Contact() {
   const form = useRef()
   const [loading, setLoading] = useState(false)
@@ -33,12 +36,26 @@ export default function Contact() {
     <div>
       {success && <SuccessBand />}
       {error && <ErrorBand />}
+
       <div className="flex justify-center w-full">
         <form
-          className="card bg-base-100 shadow-xl w-2/3 my-16 py-8 px-6"
+          className="card bg-white shadow-xl w-2/3 my-16 py-8 px-6"
           ref={form}
           onSubmit={sendEmail}
         >
+          <div className="flex justify-center my-2">
+            <div className="w-8 h-8 rounded-full bg-princeton-orange flex justify-center items-center">
+              <EnvelopeIcon className="w-6 h-6 text-slate-100" />
+            </div>
+          </div>
+          <div className="flex justify-center text-raisin-black my-2">
+            <SubtitleText text="Contact me" />
+          </div>
+
+          <div className="pl-1 text-raisin-black">
+            <ParagraphText text="Email: smallfish.az@gmail.com" />
+          </div>
+          <div className="divider text-slate-300">OR</div>
           <label className="form-control mb-4">
             <div className="label">
               <span className="label-text">Name</span>
@@ -46,7 +63,7 @@ export default function Contact() {
             <input
               type="text"
               placeholder="small fish"
-              className="input input-bordered w-full"
+              className="input input-bordered input-acccent w-full"
               name="name"
             />
           </label>

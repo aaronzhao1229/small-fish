@@ -19,13 +19,15 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: '#fc9432',
-          secondary: '#f6d860',
-          accent: '#37cdbe',
-          neutral: '#3d4451',
-          'base-100': '#ffffff',
-          'princeton-orange': '#fc9432',
-          'safety-orange': '#fd8021',
+          primary: '#141c2b',
+          secondary: '#e8b866',
+          accent: '#fc9432',
+          neutral: '#fd8021',
+          'base-100': '#f1f5f9',
+          info: '#fe6f1b',
+          success: '#f95818',
+          warning: '#e33a14',
+          error: '#e33a14',
         },
       },
     ],
