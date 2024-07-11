@@ -24,7 +24,7 @@ export default function Home() {
         <PlusIcon className="size-12 text-raisin-black" />
       </div>
       <BgImage
-        image={'../code1.jpg'}
+        image={'../software.jpg'}
         label={'Software and web development'}
         onClick={() => {
           navigate('/software')
