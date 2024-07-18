@@ -28,7 +28,7 @@ export default function AcousticEngineering() {
       />
       <div className="divider"></div>
       <ImageWithText
-        image="../townhouses.png"
+        image="../townhouses2.png"
         subtitleText={g6Subtitle}
         text={g6}
       />
