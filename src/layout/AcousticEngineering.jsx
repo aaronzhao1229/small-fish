@@ -16,19 +16,19 @@ export default function AcousticEngineering() {
     <div className="mx-8 mt-12">
       <TitleText text="Acoustic Engineering" />
       <ImageWithText
-        image="../trafficNoise.jpg"
+        image="../house1.png"
         subtitleText={trafficSubtitle}
         text={trafficNoise}
       />
       <div className="divider"></div>
       <ImageWithText
-        image="../aircraft.jpg"
+        image="../aircraft1.png"
         subtitleText={aircraftSubtitle}
         text={aircraft}
       />
       <div className="divider"></div>
       <ImageWithText
-        image="../townhouses.jpg"
+        image="../townhouses.png"
         subtitleText={g6Subtitle}
         text={g6}
       />
