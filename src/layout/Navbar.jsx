@@ -44,7 +44,9 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link to={`about`}>About</Link>
+              <Link className="btn btn-ghost" to={`about`}>
+                About
+              </Link>
             </li>
             <li>
               <Link to={`acoustic`}>Acoustic Engineering</Link>
@@ -74,7 +76,9 @@ export default function Navbar() {
       <div className="navbar-end">
         <ul className="menu menu-horizontal px-1 text-white hidden sm:flex">
           <li>
-            <Link to={`about`}>About</Link>
+            <Link className="btn btn-ghost" to={`about`}>
+              About
+            </Link>
           </li>
           <li>
             <details>
