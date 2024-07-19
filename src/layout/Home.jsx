@@ -1,6 +1,8 @@
 import { PlusIcon } from '@heroicons/react/24/solid'
 import { useNavigate } from 'react-router-dom'
+
 import BgImage from '../components/BgImage'
+import Diff from '../components/Diff'
 export default function Home() {
   const navigate = useNavigate()
 
@@ -30,6 +32,7 @@ export default function Home() {
           navigate('/software')
         }}
       />
+     
     </div>
   )
 }

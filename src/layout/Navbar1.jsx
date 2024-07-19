@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { useState } from 'react'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,13 +15,13 @@ export default function Navbar() {
               />
             </div>
           </div>
-          <p className="text-white text-lg tracking-tight">small fish</p>
+          <p className="text-white text-lg font-extralight">small fish</p>
         </NavLink>
       </div>
 
       <div className="block lg:hidden">
         <button
-          className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-princeton-orange hover:text-princeton-orange"
+          className="flex items-center px-3 py-2 mr-2 border rounded text-white border-white hover:text-white hover:border-princeton-orange hover:text-princeton-orange"
           onClick={() => {
             setIsOpen(!isOpen)
           }}
@@ -44,7 +44,7 @@ export default function Navbar() {
         >
           About
         </a>
-        <a
+        {/* <a
           href="/acoustic"
           className="block mt-4 lg:inline-block lg:mt-0  hover:text-princeton-orange mr-4"
         >
@@ -55,11 +55,26 @@ export default function Navbar() {
           className="block mt-4 lg:inline-block lg:mt-0  hover:text-princeton-orange mr-4"
         >
           Software Development
-        </a>
+        </a> */}
+        <ul className="menu menu-horizontal px-1 text-white mr-4">
+          <li>
+            <details>
+              <summary className="hover:text-princeton-orange">Services</summary>
+              <ul className="p-2 z-10 w-52 text-raisin-black">
+                <li className="rounded-lg">
+                  <a href="/acoustic">Acoustic Engineering</a>
+                </li>
+                <li className="rounded-lg">
+                  <a href="/software">Software Development</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
 
         <a
           href="/contact"
-          className="block mt-4 lg:inline-block lg:mt-0  hover:text-princeton-orange"
+          className="block mt-4 lg:inline-block lg:mt-0  hover:text-princeton-orange mr-4"
         >
           Contact
         </a>
