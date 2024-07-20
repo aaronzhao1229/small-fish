@@ -2,7 +2,7 @@ import { PlusIcon } from '@heroicons/react/24/solid'
 import { useNavigate } from 'react-router-dom'
 
 import BgImage from '../components/BgImage'
-import Diff from '../components/Diff'
+
 export default function Home() {
   const navigate = useNavigate()
 
@@ -11,7 +11,7 @@ export default function Home() {
       <div className="xs:mx-4 sm:mx-8 lg:mx-12 my-12">
         <p className="text-2xl">
           Welcome to <span className="text-safety-orange">small fish</span>{' '}
-          consulting!
+          consulting
         </p>
       </div>
       <BgImage
@@ -32,7 +32,6 @@ export default function Home() {
           navigate('/software')
         }}
       />
-     
     </div>
   )
 }
