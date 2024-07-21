@@ -15,7 +15,7 @@ export default function Home() {
         </p>
       </div>
       <BgImage
-        image={'../acoustic.jpg'}
+        image={'../acoustic1.jpg'}
         label={'Acoustic Engineering'}
         onClick={() => {
           navigate('/acoustic')
@@ -26,7 +26,7 @@ export default function Home() {
         <PlusIcon className="size-12 text-raisin-black" />
       </div>
       <BgImage
-        image={'../software.jpg'}
+        image={'../code2.jpg'}
         label={'Software and web development'}
         onClick={() => {
           navigate('/software')

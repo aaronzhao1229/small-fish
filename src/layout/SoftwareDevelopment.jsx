@@ -1,4 +1,4 @@
-import ImageWithText from '../components/ImageWithText'
+import ServiceCard from '../components/ServiceCard'
 import TitleText from '../components/TitleText'
 const homeBaseSubtitle = 'Home Base Enamels'
 const homebase =
@@ -10,7 +10,27 @@ export default function SoftwareDevelopment() {
   return (
     <div className="mx-8 mt-12">
       <TitleText text="Software development" />
-      <ImageWithText
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="my-4 mr-4">
+          <ServiceCard
+            image="../homebase.png"
+            title={homeBaseSubtitle}
+            service={homebase}
+            hasButton={true}
+            link={'https://www.homebaseenamels.co.nz/'}
+          />
+        </div>
+        <div className="my-4 mr-4">
+          <ServiceCard
+            image="../kascade.png"
+            title={kascadeSubtitle}
+            service={kascade}
+            hasButton={true}
+            link={'https://www.kascade.design/'}
+          />
+        </div>
+      </div>
+      {/* <ImageWithText
         image="../homebase.png"
         subtitleText={homeBaseSubtitle}
         text={homebase}
@@ -22,7 +42,7 @@ export default function SoftwareDevelopment() {
         subtitleText={kascadeSubtitle}
         text={kascade}
         link={'https://www.kascade.design/'}
-      />
+      /> */}
     </div>
   )
 }
