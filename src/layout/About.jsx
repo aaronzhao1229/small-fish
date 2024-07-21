@@ -36,44 +36,38 @@ const journey7 =
 export default function About() {
   return (
     <div className="mx-8 mt-12 text-justify">
-      <TitleText text="About me" />
-
-      <div className="max-w-sm w-full md:max-w-full md:flex">
-        <div
-          className="w-72 h-72 flex-none bg-cover rounded-lg text-center my-4 overflow-hidden"
-          style={{ backgroundImage: "url('../profile.jpeg')" }}
-          title="profile"
-        ></div>
-        <div className="rounded-lg py-4 pl-4 flex flex-col justify-between leading-normal">
-          <div className="mb-8">
-            <ParagraphText text={introduction1} />
-            <ParagraphText text={introduction2} />
-            <ParagraphText text={introduction3} />
-          </div>
+      <div>
+        <TitleText text="About me" />
+        <div>
+          <img
+            src="../profile.jpeg"
+            className="rounded-lg w-48 md:w-72 float-left mr-4 mb-2"
+          />
+          <ParagraphText text={introduction1} />
+          <ParagraphText text={introduction2} />
+          <ParagraphText text={introduction3} />
+          <ParagraphText text={introduction4} />
         </div>
       </div>
-      <SubtitleText text="My Journey to Becoming a Sole Trader" />
-      <div className="text-sm">
-        <ParagraphText text={journey1} />
 
-        <div className="max-w-sm w-full md:max-w-full md:flex">
-          <div
-            className="w-72 h-72 flex-none bg-cover rounded-lg text-center my-4 overflow-hidden"
-            style={{ backgroundImage: "url('../studyAuckland.jpeg')" }}
-            title="profile"
-          ></div>
-          <div className="rounded-b lg:rounded-b-none lg:rounded-r flex flex-col py-4 pl-4 justify-between leading-normal">
-            <div className="mb-8">
-              <ParagraphText text={journey2} />
-              <ParagraphText text={journey3} />
-              <ParagraphText text={journey4} />
-            </div>
+      <div>
+        <SubtitleText text="My Journey to Becoming a Sole Trader" />
+        <div className="text-sm">
+          <ParagraphText text={journey1} />
+          <div>
+            <img
+              src="../studyAuckland.jpeg"
+              className="rounded-lg w-48 md:w-72 float-left mr-4 mb-2"
+            />
+            <ParagraphText text={journey2} />
+            <ParagraphText text={journey3} />
+            <ParagraphText text={journey4} />
           </div>
+          <ParagraphText text={journey5} />
+          <Carousel />
+          <ParagraphText text={journey6} />
+          <ParagraphText text={journey7} />
         </div>
-        <ParagraphText text={journey5} />
-        <Carousel />
-        <ParagraphText text={journey6} />
-        <ParagraphText text={journey7} />
       </div>
     </div>
   )
