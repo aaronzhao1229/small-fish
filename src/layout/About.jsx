@@ -38,15 +38,24 @@ export default function About() {
     <div className="mx-8 mt-12 text-justify">
       <div>
         <TitleText text="About me" />
-        <div>
-          <img
-            src="../profile.jpeg"
-            className="rounded-lg w-48 md:w-72 float-left mr-4 mb-2"
-          />
-          <ParagraphText text={introduction1} />
-          <ParagraphText text={introduction2} />
-          <ParagraphText text={introduction3} />
-          <ParagraphText text={introduction4} />
+        <div className="hero p-0">
+          <div className="hero-content flex-col lg:flex-row-reverse p-0">
+            <img
+              src="../profile.jpeg"
+              className="rounded-lg w-48 md:w-72 ml-4 mb-2"
+            />
+            <div className="flex flex-col">
+              <ParagraphText text={introduction1} />
+              <ParagraphText text={introduction2} />
+              <ParagraphText text={introduction3} />
+              <ParagraphText text={introduction4} />
+            </div>
+
+            {/* <ParagraphText text={introduction1} />
+            <ParagraphText text={introduction2} />
+            <ParagraphText text={introduction3} />
+            <ParagraphText text={introduction4} /> */}
+          </div>
         </div>
       </div>
 
