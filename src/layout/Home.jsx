@@ -23,7 +23,7 @@ export default function Home() {
       />
 
       <div className="flex justify-center p-4">
-        <PlusIcon className="size-12 text-raisin-black" />
+        {/* <PlusIcon className="size-12 text-raisin-black" /> */}
       </div>
       <BgImage
         image={'../code2.jpg'}
